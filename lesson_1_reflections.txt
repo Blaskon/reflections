@@ -1,0 +1,71 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It allowed me to filter the lines that were different from the old and new versions of the same file,
+	instead of having to read through all the file sppoting any difference visually.
+	By using this tool I could more easily an quicly identify that a typo was introduced
+	in one of the lines that was changed in the new version of the file.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Sometimes it is necesary to keep previous versions of the files you are working on, 
+	in case you do something undesriable in the file that it's too hard to revert.
+	Without using version control, I would have to create a new file manually with a 
+	different name in the same directory, or multiple files with the same name in a different directories.
+	This will be messy because:
+	
+	- Everytime I create a new version of the file I would have to addapt my code to new directories or file names.
+	- If working on a big program or application there could be many files that would have to be versioned.
+	
+	This will error-prone and time consuming.
+	
+	Also if I have the history of a file that contains every single change I have made, then I can more easily
+	revert any undesireable changes to a previous version of the file.
+	Having the entire history of a file is also more organized, because I may make mistakes when naming or
+	organizing the new versions of files manually. I may forget which is the file that has
+	the content of the immediate previous version.
+	
+	If working with a team, team members can see which modifications everyone has made and have every change
+	separate. This allows to more easily divide the work load in chunks.
+	
+	
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+	Pros of choosing when to commit: 
+    
+		- Manually choosing when to create a commit gives you flexibility, you can save a version when changes that you implemented make sense logically. 
+	
+	Cons of choosing when to commit
+	
+		- When commiting manually, you may forget when to save. There could also be a disruption on the system you are working on and you may lose your changes.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because in some projects, such as often in software development projects, there are files
+	that are interelated and a change in one of them affects the functionallity of the 
+	other, and thus the outcome of the overall project. In this case it makes sense to be able to commit changes to multiple
+	files at once.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    To see the log of the commits in the repo we can run the command "git log".
+	It displays a list starting from the most recent commits in descending order by date,
+	starting from the most recent one on top.
+	"git log" command displays the ID of each commit.
+	
+	Then we can use two different commits IDs to find the difference between the versions of the
+	files involved in these two commits. We do this using the command "git diff"
+	specifying the two commits IDs separated by a space.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	It allows the posibility to experiment more, because if some change introduces a bug, we can always revert (checkout) from a previous commit, taking the files to a state where the bug wasn't there.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
