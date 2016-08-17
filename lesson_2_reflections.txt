@@ -50,5 +50,11 @@ How do the diagrams help you visualize the branch structure?
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+	When two branches are merged, the checked out branch will include the changes of the branch that is being merged into. The commits of each branches are merged in an interleaved manner. This will result in files containing the lines were modified in the latest commits of both branches. Also the checkedout branch that merged the other branch into it, will move its pointer to the merge commit. The merge commit is the first commit that contains all the changes of both branches.
+	
+	We represent this in a diagram in order to visualize the branches in an abstract way. This help us understand better the idea of how two branches are merged together, and identify each branches individual commits before the merge.
+	
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+	
