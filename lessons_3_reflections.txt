@@ -1,1 +1,4 @@
 When would you want to create a remote repository rather than keeping all your work local?
+	
+	Whenever I am working on a project with a team. This allows the team to have a centralized version of the project which will contain the latest changes made by the members. And all of them can access the latest state of the repo at any time.
+	Also, for security reasons, your projects are safer on GitHub servers than only on your local computer.
