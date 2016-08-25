@@ -2,3 +2,8 @@ When would you want to create a remote repository rather than keeping all your w
 	
 	Whenever I am working on a project with a team. This allows the team to have a centralized version of the project which will contain the latest changes made by the members. And all of them can access the latest state of the repo at any time.
 	Also, for security reasons, your projects are safer on GitHub servers than only on your local computer.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	I may be working on some changes and other people may be working on the same lines I am working on. This will cause conflicts. If there is a conflict I wouldn't want Git to be updating my files constantly. If you are in the process of creating a new feature, you don't want to solve those conflicts before finishisng your feature first.
+    This way you can keep focus and decide when you want to get the latest versions and integrate changes. It is best to have the choice to decide when to pull changes from a remote. This also gives you the freedom to finish a logical unit of work, without worrying that other changes that may have been added to the remote will alter my ongoing work.
