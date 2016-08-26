@@ -68,4 +68,6 @@ could break something?
 
 Now that you have your workspace set up, what do you want to try using Git for?
 
-    Fill in your answer here
+    Git looks like a good tool to control changes that I apply and want to work with in my files.
+	It also alows to experiment and explore implementing compex changes without having to worry about
+	damaging the previous work done.

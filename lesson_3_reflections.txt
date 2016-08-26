@@ -1,0 +1,21 @@
+When would you want to create a remote repository rather than keeping all your work local?
+	
+	Whenever I am working on a project with a team. This allows the team to have a centralized version of the project which will contain the latest changes made by the members. And all of them can access the latest state of the repo at any time.
+	Also, for security reasons, your projects are safer on GitHub servers than only on your local computer.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	I may be working on some changes and other people may be working on the same lines I am working on. This will cause conflicts. If there is a conflict I wouldn't want Git to be updating my files constantly. If you are in the process of creating a new feature, you don't want to solve those conflicts before finishing your feature first.
+    This way you can keep focus and decide when you want to get the latest versions and integrate changes. It is best to have the choice to decide when to pull changes from a remote. This also gives you the freedom to finish a logical unit of work, without worrying that other changes that may have been added to the remote will alter my ongoing work.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	A clone is an exact copy of a repository, which includes the files and their history. It is possible to clone repositories in different locations on your local computer, or from a remote server. You use clone when you need to fetch a repository to a particular location on your local machine. 
+	
+	A fork basically consists of cloning a repository, but only on a GitHub server instead of locally as in regular cloning. You can use forks whenever you want to work on files hosted on a GitHub repository, whose owner does not allow changes, or when you don't want to alter the original GitHub repository in question. 
+	
+	A branch is a label that is given to a list of commits that are reachable from the tip of such list. The branch name points to the latest commit, making all the commits on the branch reachable by just referring to the branch name. 
+	
+	But what if you want to make experiments without directly affecting the main project, and then if the experiment worked include it in the main project?
+	If you clone the main project's repository and make changes in the clone, this won't include any possible changes made to the main project after you cloned it. What this means is that if you have repo A, clone it to repo A', you make changes to repo A', while you are at it, repo A has changes, so repo A' won't have the changes made to repo A. 
+	A branch is a label that is given to a list of commits that are reachable from the tip of such list. The branch name points to the latest commit, making all the commits on the branch reachable by just referring to the branch name. When you assign a branch to a commit, this will split the workflow on a file or files from that pont, so file X will have 2 different versions now. But branches can be merged at any point. So, if you want to work in parallel to the main project, add new functionality or experimental changes that will eventually be included into the main project, in this situation it is best to use branches.
